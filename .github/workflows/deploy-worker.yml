@@ -1,0 +1,39 @@
+name: Deploy price Worker
+
+# Runs only once the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID repo secrets are set.
+on:
+  push:
+    branches: [main]
+    paths: [worker/**, pnpm-lock.yaml]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    steps:
+      - if: env.HAS_TOKEN != 'true'
+        run: echo "::notice::CLOUDFLARE_API_TOKEN is not set; skipping Worker deploy."
+      - if: env.HAS_TOKEN == 'true'
+        uses: actions/checkout@v5
+      - if: env.HAS_TOKEN == 'true'
+        uses: pnpm/action-setup@v4
+      - if: env.HAS_TOKEN == 'true'
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - if: env.HAS_TOKEN == 'true'
+        run: pnpm install --frozen-lockfile
+      - if: env.HAS_TOKEN == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          packageManager: pnpm

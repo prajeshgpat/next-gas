@@ -1,0 +1,37 @@
+{
+  "data": {
+    "locationBySearchTerm": {
+      "stations": {
+        "count": 3,
+        "results": [
+          {
+            "id": "1001",
+            "name": "Shell",
+            "latitude": 40.7891,
+            "longitude": -74.0562,
+            "address": { "line1": "1 Example Rd", "locality": "Secaucus", "region": "NJ", "postalCode": "07094" },
+            "brands": [{ "brandId": 1, "name": "Shell" }],
+            "prices": [
+              {
+                "fuelProduct": "regular_gas",
+                "cash": { "price": 3.09, "postedTime": "2026-10-24T14:05:00Z" },
+                "credit": { "price": 3.19, "postedTime": "2026-10-24T14:05:00Z" }
+              },
+              { "fuelProduct": "premium_gas", "cash": null, "credit": { "price": 0, "postedTime": null } }
+            ]
+          },
+          {
+            "id": 1002,
+            "name": "Costco",
+            "latitude": 40.7801,
+            "longitude": -74.0701,
+            "address": null,
+            "brands": [],
+            "prices": [{ "fuelProduct": "diesel", "credit": { "price": 3.59, "postedTime": null } }]
+          },
+          { "id": "1003", "name": "Missing coordinates" }
+        ]
+      }
+    }
+  }
+}

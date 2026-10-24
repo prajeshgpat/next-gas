@@ -1,0 +1,50 @@
+name: GasBuddy spike
+
+# One GasBuddy station lookup (two HTTP requests) from a GitHub-hosted runner, to check the
+# endpoint answers cloud servers. Runs once when this file changes on dev, otherwise only by hand.
+on:
+  push:
+    branches: [dev]
+    paths: [.github/workflows/gasbuddy-spike.yml]
+  workflow_dispatch:
+    inputs:
+      lat:
+        description: Latitude of the search point
+        default: "40.7895"
+      lon:
+        description: Longitude of the search point
+        default: "-74.0565"
+
+concurrency:
+  group: gasbuddy-spike
+  cancel-in-progress: false
+
+jobs:
+  spike:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Look up stations once
+        env:
+          LAT: ${{ inputs.lat || '40.7895' }}
+          LON: ${{ inputs.lon || '-74.0565' }}
+        run: |
+          set -o pipefail
+          pnpm --silent spike:gasbuddy "$LAT" "$LON" --save gasbuddy-response.json | tee summary.json
+      - name: Write job summary
+        if: always()
+        run: |
+          { echo '### GasBuddy spike'; echo '```json'; cat summary.json 2>/dev/null || echo 'no output'; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gasbuddy-response
+          path: gasbuddy-response.json
+          if-no-files-found: ignore
+          retention-days: 14

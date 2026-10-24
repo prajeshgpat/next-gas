@@ -1,0 +1,11 @@
+name = "next-gas-prices"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Comma-separated origins allowed to call the Worker from a browser.
+ALLOWED_ORIGINS = "https://prajeshgpat.github.io,http://localhost:5173"
+# Kill switch: set to "false" to stop every GasBuddy request without a redeploy of code.
+LOOKUPS_ENABLED = "true"
+
+# Secret, set with `wrangler secret put SPIKE_TOKEN`: guards the one-off /spike endpoint.
