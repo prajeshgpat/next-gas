@@ -1,0 +1,23 @@
+{
+  "elements": [
+    {"type": "node", "id": 1001, "lat": 37.7749, "lon": -122.4194,
+     "tags": {"amenity": "fuel", "name": "Shell", "brand": "Shell", "brand:wikidata": "Q110716465",
+              "addr:housenumber": "100", "addr:street": "Market St", "addr:city": "San Francisco", "addr:state": "CA",
+              "opening_hours": "24/7", "fuel:diesel": "yes", "car_wash": "yes"}},
+    {"type": "way", "id": 2002, "center": {"lat": 41.8781, "lon": -87.6298},
+     "tags": {"amenity": "fuel", "name": "Chevron", "brand": "CHEVRON", "shop": "convenience"}},
+    {"type": "node", "id": 3003, "lat": 44.2, "lon": -100.1,
+     "tags": {"amenity": "fuel", "name": "Joe's Gas & Go"}},
+    {"type": "node", "id": 4004, "lat": 44.5, "lon": -89.5,
+     "tags": {"amenity": "fuel", "name": "Kwik Trip #123", "brand": "Kwik Trip", "brand:wikidata": "Q6450420",
+              "fuel:e85": "yes", "compressed_air": "yes"}},
+    {"type": "node", "id": 5005, "lat": 33.4484, "lon": -112.074,
+     "tags": {"amenity": "fuel", "name": "Circle K", "brand": "Circle K"}},
+    {"type": "way", "id": 6006, "center": {"lat": 29.7604, "lon": -95.3698},
+     "tags": {"amenity": "fuel", "brand": "Sunoco", "brand:wikidata": "Q1423218", "fuel:diesel": "yes"}},
+    {"type": "node", "id": 7007, "lat": 39.7392, "lon": -104.9903,
+     "tags": {"amenity": "fuel", "name": "Mom & Pop Fuel", "brand": "Mom & Pop"}},
+    {"type": "node", "id": 8008, "lat": 47.6062, "lon": -122.3321,
+     "tags": {"amenity": "fuel", "name": "Costco Gasoline", "brand": "Costco", "brand:wikidata": "Q715583"}}
+  ]
+}

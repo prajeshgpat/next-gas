@@ -1,0 +1,6 @@
+{
+  "elements": [
+    {"type": "node", "id": 1, "lat": 40.0, "lon": -100.0, "tags": {"amenity": "fuel", "name": "A"}},
+    {"type": "relation", "id": 2, "tags": {"amenity": "fuel", "name": "No coords"}}
+  ]
+}

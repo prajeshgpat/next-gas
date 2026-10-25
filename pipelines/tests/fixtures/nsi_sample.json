@@ -1,0 +1,25 @@
+{
+  "nsi": {
+    "brands/amenity/fuel": {
+      "properties": {"path": "brands/amenity/fuel"},
+      "items": [
+        {"displayName": "Shell", "id": "shell-1", "locationSet": {"include": ["001"]},
+         "matchNames": ["shell oil"],
+         "tags": {"amenity": "fuel", "brand": "Shell", "brand:wikidata": "Q110716465", "name": "Shell"}},
+        {"displayName": "Chevron", "id": "chevron-1", "locationSet": {"include": ["us"]},
+         "tags": {"amenity": "fuel", "brand": "Chevron", "brand:wikidata": "Q319642", "name": "Chevron"}},
+        {"displayName": "Kwik Trip", "id": "kwik-1", "locationSet": {"include": ["us-wi", "us-mn"]},
+         "matchNames": ["kwiktrip"],
+         "tags": {"amenity": "fuel", "brand": "Kwik Trip", "brand:wikidata": "Q6450420", "name": "Kwik Trip"}},
+        {"displayName": "Circle K", "id": "circlek-1", "locationSet": {"include": ["001"], "exclude": ["us"]},
+         "tags": {"amenity": "fuel", "brand": "Circle K", "brand:wikidata": "Q3268010", "name": "Circle K"}},
+        {"displayName": "Petro-Canada", "id": "petrocan-1", "locationSet": {"include": ["ca"]},
+         "tags": {"amenity": "fuel", "brand": "Petro-Canada", "brand:wikidata": "Q1208459", "name": "Petro-Canada"}},
+        {"displayName": "Costco Gasoline", "id": "costco-1", "locationSet": {"include": ["us"]},
+         "tags": {"amenity": "fuel", "brand": "Costco", "brand:wikidata": "Q715583", "name": "Costco Gasoline"}},
+        {"displayName": "Sunoco", "id": "sunoco-1", "locationSet": {"include": ["us"]},
+         "tags": {"amenity": "fuel", "brand": "Sunoco", "brand:wikidata": "Q1423218", "name": "Sunoco"}}
+      ]
+    }
+  }
+}

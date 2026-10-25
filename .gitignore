@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.next/
+.turbo/
+coverage/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+
+# pipelines
+pipelines/.venv/
+__pycache__/
+.pytest_cache/
+pipelines/out/
+*.osm.pbf

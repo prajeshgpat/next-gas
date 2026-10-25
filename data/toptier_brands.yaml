@@ -1,0 +1,33 @@
+# Licensed TOP TIER gasoline brands in the US, keyed to the Wikidata IDs OSM uses in
+# `brand:wikidata` (verified against name-suggestion-index v6.0).
+# Source: https://www.toptiergas.com/gasoline-brands/  — re-check quarterly.
+# Small single-site licensees (casino fuel stops, travel plazas) are left out; they rarely carry
+# a brand:wikidata tag and can be added by name match if they matter.
+verified_at: 2026-10-23
+source: https://www.toptiergas.com/gasoline-brands/
+brands:
+  - { name: "76", wikidata: Q1658320 }
+  - { name: Aloha Petroleum, wikidata: Q4734197 }
+  - { name: Amoco, wikidata: Q465952 }
+  - { name: ARCO, wikidata: Q304769 }
+  - { name: BP, wikidata: Q152057 }
+  - { name: Cenex, wikidata: Q62127191 }
+  - { name: Chevron, wikidata: Q319642 }
+  - { name: Citgo, wikidata: Q2974437 }
+  - { name: Conoco, wikidata: Q109341187 }
+  - { name: Costco, wikidata: Q715583 }
+  - { name: Diamond Shamrock, wikidata: Q16973722 }
+  - { name: Exxon, wikidata: Q109675651 }
+  - { name: Hele, wikidata: Q99196505 }
+  - { name: Holiday, wikidata: Q5880490 }
+  - { name: Marathon, wikidata: Q458363 }
+  - { name: Meijer, wikidata: Q1917753 }
+  - { name: Mobil, wikidata: Q109676002 }
+  - { name: Phillips 66, wikidata: Q1656230 }
+  - { name: QuikTrip, wikidata: Q7271953 }
+  - { name: Rutter's, wikidata: Q7383544 }
+  - { name: Shell, wikidata: Q110716465 }
+  - { name: Sinclair, wikidata: Q1290900 }
+  - { name: Sunoco, wikidata: Q1423218 }
+  - { name: Texaco, wikidata: Q775060 }
+  - { name: Valero, wikidata: Q1283291 }
