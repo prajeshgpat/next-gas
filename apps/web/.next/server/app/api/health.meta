@@ -1,0 +1,1 @@
+{"status":200,"headers":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/health/layout,_N_T_/api/health/route,_N_T_/api/health"},"routeCache":{"key":"/route-cache/APP_ROUTE/c52a1a702beca73fabb072e40c403cd8e1ddedeb84fca84c070d56a9a978bd57/$/api/health","owner":{"kind":"APP_ROUTE","sourceRoute":"/api/health/route"},"isFallback":false}}
