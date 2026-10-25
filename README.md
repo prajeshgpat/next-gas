@@ -1,6 +1,6 @@
 # NextGas
 
-NextGas is a personal gas-price route planner that answers one question while you drive: "Should I fill up now, or is there a cheaper station I can safely reach?" It takes your route and remaining range, finds stations along the corridor, filters to TopTier brands, and recommends filling now or waiting, flagging long stretches with no station. See [docs/plan.md](docs/plan.md) for decisions and milestones.
+NextGas is a personal gas-price route planner that answers one question while you drive: "Should I fill up now, or is there a cheaper station I can safely reach?" It takes your route and remaining range, finds stations along the corridor, filters to TopTier brands, and recommends filling now or waiting, flagging long stretches with no station. See [docs/m0-decisions.md](docs/m0-decisions.md) for decisions and milestones.
 
 ## Layout
 

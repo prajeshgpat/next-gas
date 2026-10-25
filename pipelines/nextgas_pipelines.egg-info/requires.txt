@@ -1,6 +1,0 @@
-requests==2.34.2
-psycopg[binary]==3.3.6
-pyyaml==6.0.3
-
-[dev]
-pytest==9.1.1

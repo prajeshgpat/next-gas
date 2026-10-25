@@ -15,3 +15,5 @@ __pycache__/
 .pytest_cache/
 pipelines/out/
 *.osm.pbf
+*.egg-info/
+.turbo/
